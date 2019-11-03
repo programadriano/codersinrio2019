@@ -316,19 +316,7 @@
 
     <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
       <span>Service</span>
-    </div>
-
-    <div class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
-      <span>Add Dependency</span>
-    </div>
-
-    <div class="card card-small" (click)="selection.value = 'test'" tabindex="0">
-      <span>Run and Watch Tests</span>
-    </div>
-
-    <div class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-      <span>Build for Production</span>
-    </div>
+    </div>   
   </div>
 
   <div [ngSwitch]="selection.value">
@@ -337,11 +325,8 @@
       </pre>
     <pre *ngSwitchCase="'material'">
         <button (click)="messageSuccess()">Mensagem</button>
-      <!-- <p><a href="https://github.com/programadriano/angular-behaviorsubject">Código</a></p> -->
     </pre>
-    <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-    <pre *ngSwitchCase="'test'">ng test</pre>
-    <pre *ngSwitchCase="'build'">ng build --prod</pre>
+   
   </div>
 
 
